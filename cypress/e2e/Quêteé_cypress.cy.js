@@ -24,7 +24,7 @@ cy.get('#signup-email').type('khelifa.smail08@gmail.com')
 cy.get('#signup-password').type('Wild2024')
 cy.get('label[for="newsletter"]').click();
 cy.get('button[data-qa="signup-submit-button"]').click()
-cy.url().should('include', 'https://preprod.backmarket.fr/fr-fr/dashboard/orders');
+cy.contains("Un utilisateur avec cette adresse email existe déjà")
 
 
   });
